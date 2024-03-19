@@ -1,0 +1,43 @@
+//Color variables
+$primary-color: #000000;
+$secondary-color: #ffffff;
+$background-color:#f9f9f9;
+$surface-color:#ffffff;
+$primary-font-color:#ffffff;
+$secondary-font-color:#000000;
+$tertiary-font-color:#6d6d6d;
+
+//Spacing variables
+$space-unit: 0.5rem;
+$border-radius: 3px;
+
+//Font variables
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-semi-bold: 600;
+$font-weight-bold: 700;
+$font-weight-extra-bold: 800;
+$font-size-unit: 0.5rem;
+$line-height-1: 35px;
+
+$transition-speed: 0.3s;
+
+:export {
+  primaryColor: $primary-color;
+  secondaryColor: $secondary-color;
+  backgroundColor: $background-color;
+  surfaceColor: $surface-color;
+  primaryFontColor: $primary-font-color;
+  secondaryFontColor: $secondary-font-color;
+  tertiaryFontColor: $tertiary-font-color;
+  spaceUnit: $space-unit;
+  fontWeightLight: $font-weight-light;
+  fontWeightRegular: $font-weight-regular;
+  fontWeightSemiBold: $font-weight-semi-bold;
+  fontWeightBold: $font-weight-bold;
+  fontWeightExtraBold: $font-weight-extra-bold;
+  fontSizeUnit: $font-size-unit;
+  lineHeight1: $line-height-1;
+  borderRadius: $border-radius;
+  transitionSpeed: $transition-speed;
+}

@@ -1,0 +1,38 @@
+@use "_styles/variables" as *;
+
+.cover {
+    width: 100%;
+    height: 100vh;
+    background-color: $surface-color;
+    
+    & > div {
+        display: flex;
+        height: 100%;
+        max-width: 130 * $space-unit;
+        margin: auto;
+        align-items: center;
+        justify-content: space-between;
+
+        & > div:first-child{
+            color: $secondary-font-color;
+            
+            h1 {
+                font-weight: $font-weight-bold;
+                font-size: 10 * $font-size-unit;
+                margin-bottom: 3 * $space-unit;
+            }
+
+            p {
+                font-weight: $font-weight-regular;
+                font-size: 3 * $font-size-unit;
+                line-height: $line-height-1;
+            }
+        }
+
+        & > div:last-child{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}

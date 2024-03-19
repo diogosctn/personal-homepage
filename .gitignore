@@ -1,0 +1,35 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/diogosctn.ceuci.com/node_modules
+/diogosctn.ceuci.com/.pnp
+/diogosctn.ceuci.com/.pnp.js
+
+# testing
+/diogosctn.ceuci.com/coverage
+
+# next.js
+/diogosctn.ceuci.com/.next/
+/diogosctn.ceuci.com/out/
+
+# production
+/diogosctn.ceuci.com/build
+
+# misc
+/diogosctn.ceuci.com/.DS_Store
+*.pem
+
+# debug
+/diogosctn.ceuci.com/npm-debug.log*
+/diogosctn.ceuci.com/yarn-debug.log*
+diogosctn.ceuci.com/yarn-error.log*
+
+# local env files
+diogosctn.ceuci.com/.env*.local
+
+# vercel
+diogosctn.ceuci.com/.vercel
+
+# typescript
+*.tsbuildinfo
+diogosctn.ceuci.com/next-env.d.ts

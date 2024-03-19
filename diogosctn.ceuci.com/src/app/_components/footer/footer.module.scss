@@ -1,0 +1,28 @@
+@use "../../_styles/variables" as *;
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 11.25 * $space-unit;
+    background-color: $background-color;
+    
+    span {
+        display: flex;
+        height: 100%;
+        max-width: 130 * $space-unit;
+        margin: auto;
+        align-items: center;
+        justify-content: flex-start;
+        color: $tertiary-font-color;
+
+        p {
+            font-weight: $font-weight-light;
+            font-size: 2 * $font-size-unit;
+
+            transition: font-weight $transition-speed;
+        }
+    }
+}

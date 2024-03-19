@@ -1,0 +1,104 @@
+@use "../../_styles/variables" as *;
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 11.5 * $space-unit;
+    background-color: $primary-color;
+
+    nav {
+        display: flex;
+        height: 100%;
+        max-width: 130 * $space-unit;
+        margin: auto;
+        align-items: center;
+        justify-content: space-between;
+        color: $primary-font-color;
+
+        .logo {
+            font-weight: $font-weight-semi-bold;
+            font-size: 4 * $font-size-unit;
+
+            transition: font-weight $transition-speed;
+
+            &:hover {
+                font-weight: $font-weight-extra-bold;
+            }
+        }
+
+        ul {
+            display: flex;
+            height: 100%;
+             
+            .link {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                margin-left: 2 * $space-unit;
+                
+                font-weight: $font-weight-semi-bold;
+                font-size: 3 * $font-size-unit;
+
+                transition: font-weight $transition-speed;
+                
+                div {
+                    width: 100%;
+                    height: 0;
+                    transition: height $transition-speed;
+
+                    border-radius: $border-radius $border-radius 0 0;
+                
+                    &:last-child {
+                        background-color: $primary-font-color;
+                    }
+                }
+                
+                &:hover {
+                    font-weight: $font-weight-extra-bold;
+
+                    div {
+                        height: $space-unit;
+                    }
+                }
+            }
+
+            .linkActive {
+                font-weight: $font-weight-extra-bold;
+
+                div {
+                    height: $space-unit;
+                }
+            }
+            
+            .icon {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-left: 2 * $space-unit;
+                margin-right: 0;
+
+                transition: margin-left $transition-speed;
+                transition: margin-right $transition-speed;
+                
+                img {
+                    transform: scale(1);
+                    transition: transform $transition-speed;
+                }
+
+                &:hover {
+                    margin-left: 2.2 * $space-unit;
+                    margin-right: 0.2 * $space-unit;
+
+                    img {
+                        transform: scale(1.2);
+                    }
+                }
+            }
+        }
+    }
+}
