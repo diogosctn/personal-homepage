@@ -1,13 +1,22 @@
 'use client'
 
+import { useState, useEffect } from 'react'
+
 import Image from 'next/image';
 import githubIcon from "../../_assets/icons/github-icon.svg";
 import linkedinIcon from "../../_assets/icons/linkedin-icon.svg";
 import instagramIcon from "../../_assets/icons/instagram-icon.svg";
-import styles from './header.module.scss'
+import styles from './header.module.scss' 
 
-export default function Header() {
-    const isActive = (path: string) => window.location.pathname === path
+const Header = () => {
+    const [_window, setWindow] = useState<null | Window>(null)
+ 
+    useEffect(() => {
+        setWindow(window)
+    }, [])
+
+    const isActive = (path: string) => _window?.location?.pathname === path;
+
 
     return (
         <header className={styles.header}>
@@ -60,3 +69,6 @@ export default function Header() {
         </header>
     )
 }
+
+export default Header
+
