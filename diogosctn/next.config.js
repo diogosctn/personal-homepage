@@ -1,11 +1,15 @@
 /** @type {import('next').NextConfig} */
 
-const path = require('path')
+var path = require('path')
 
-const nextConfig = {
+var nextConfig = {
+  output: 'export',
   sassOptions: {
     includePaths: [path.join(__dirname, 'styles')],
   },
+  extends: [
+    'plugin:@next/next/recommended'
+  ]
 }
 
 module.exports = nextConfig

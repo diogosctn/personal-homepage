@@ -33,7 +33,7 @@ export default function App({
     onChartStateChange(activeIndex)
   }, [activeIndex])
 
-  const handlePieClick = (_, index: any) => {
+  const handlePieClick = (_: any, index: any) => {
     setActiveIndex(index === activeIndex ? null : index);
   };
   
@@ -46,8 +46,8 @@ export default function App({
         outerRadius={outerRadius}
         fill="#8884d8"
         dataKey="value"
-        activeIndex={activeIndex}
-        activeShape={(props) => {
+        activeIndex={activeIndex === null ? undefined : activeIndex}
+        activeShape={(props: any) => {
           const { cx, cy, innerRadius, outerRadius, startAngle, endAngle, fill } = props;
 
           return (

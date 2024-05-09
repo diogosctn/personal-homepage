@@ -1,5 +1,5 @@
 {
-  "name": "diogosctn.ceuci.com",
+  "name": "diogosctn",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -16,6 +16,7 @@
     "recharts": "^2.12.3"
   },
   "devDependencies": {
+    "@next/eslint-plugin-next": "^14.2.3",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
