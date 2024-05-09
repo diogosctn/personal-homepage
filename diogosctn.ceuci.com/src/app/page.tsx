@@ -6,7 +6,7 @@ import homeImage from "./_assets/images/home-image.svg";
 
 export default function Home() {
   return (
-    <Section>
+    <Section className={styles.sectionComponent}>
       <>
         <div className={styles.textsContainer}>
           <h1>Full-Stack<br/>Web Developer</h1>

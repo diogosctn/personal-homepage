@@ -2,9 +2,10 @@
 
 .cover {
     width: 100%;
-    height: 100vh;
     background-color: $surface-color;
-    
+    padding-top: 8 * $space-unit;
+    padding-bottom: 9 * $space-unit;
+
     & > div {
         display: flex;
         height: 100%;

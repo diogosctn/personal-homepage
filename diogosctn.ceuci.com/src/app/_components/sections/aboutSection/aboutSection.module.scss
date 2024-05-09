@@ -1,0 +1,11 @@
+@use "../../../_styles/variables" as *;
+
+.aboutContainer {
+    margin-top: 11.5 * $space-unit;
+
+    h1 {
+        margin-bottom: 3 * $space-unit;
+        margin-right: 2 * $space-unit;
+    }
+}
+

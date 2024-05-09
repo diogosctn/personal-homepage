@@ -1,29 +1,25 @@
 @use "../_styles/variables" as *;
 
-
-
 .container{
     color: $secondary-font-color;
 
-    & > section {
-        margin-bottom: 2 * $space-unit;
-    }
-
-    & > section:last-of-type {
-        margin-bottom: 0;
-    }
-    
     h1 {
         font-weight: $font-weight-bold;
         font-size: 10 * $font-size-unit;
-        margin-bottom: 3 * $space-unit;
-        margin-right: 2 * $space-unit;
     }
 
     p {
         font-weight: $font-weight-regular;
         font-size: 3 * $font-size-unit;
         line-height: $line-height-1;
-        margin-right: 2 * $space-unit;
+    }
+
+    & > section {
+        margin-bottom: 2 * $space-unit;
+
+    }
+
+    & > section:last-of-type {
+        margin-bottom: 11.25 * $space-unit;
     }
 }

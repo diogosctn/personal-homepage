@@ -1,0 +1,47 @@
+@use "../../../_styles/variables" as *;
+
+.skillsContainer {
+    flex-direction: column;
+
+    & .titleContainer {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        margin-bottom: 4 * $space-unit;
+    }
+
+    & .contentContainer {
+        display: flex;
+        width: 100%;
+        
+        h3 {
+            font-weight: $font-weight-bold;
+            font-size: 3 * $font-size-unit;
+            text-align: center;
+        }
+    } 
+    
+    & .contentContainerInactive {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    } 
+
+    & .contentContainerActive {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 2 * $space-unit;
+        width: 100%;
+
+        & > :first-child {
+            width: 20%;
+        }
+
+        & > :last-child {
+            width: 80%;
+            margin-left: 4 * $space-unit;
+        }
+    } 
+}

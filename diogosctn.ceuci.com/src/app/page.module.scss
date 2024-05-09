@@ -1,6 +1,9 @@
 @use "_styles/variables" as *;
 
-
+.sectionComponent {
+    height: 100vh;
+    padding: 0;
+}
 
 .textsContainer{
     color: $secondary-font-color;

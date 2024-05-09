@@ -61,3 +61,8 @@ a {
     text-decoration: none;
     color: $primary-font-color;
 }
+
+.recharts-wrapper g:focus,
+.recharts-wrapper path:focus {
+  outline: none;
+}

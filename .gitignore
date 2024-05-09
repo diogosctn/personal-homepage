@@ -33,3 +33,4 @@ diogosctn.ceuci.com/.vercel
 # typescript
 *.tsbuildinfo
 diogosctn.ceuci.com/next-env.d.ts
+diogosctn.ceuci.com/package-lock.json

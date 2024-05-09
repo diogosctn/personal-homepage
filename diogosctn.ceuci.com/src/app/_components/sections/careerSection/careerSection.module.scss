@@ -1,0 +1,74 @@
+@use "../../../_styles/variables" as *;
+
+.careerContainer {
+    flex-direction: column;
+
+    & .titleContainer {
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+        margin-bottom: 4 * $space-unit;
+    }
+
+    & .contentContainer {
+        display: flex;
+        width: 100%;
+        min-height: 10 * $space-unit;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+
+        .card {
+            display: none;
+          }
+          
+        .active {
+        display: block;
+        opacity: 1;
+        }
+        
+        .prevButton,
+        .nextButton {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: transparent;
+        border: 2px solid black;
+        border-radius: 50%;
+        background-color: transparent;
+        color: black;
+        cursor: pointer;
+        font-weight: $font-weight-bold;
+        font-size: 4 * $font-size-unit;
+        }
+        
+        .prevButton:hover,
+        .nextButton:hover {
+        background-color: black;
+        color: white;
+        }
+
+        .prevButton:disabled,
+        .nextButton:disabled {
+        border-color: #CCCCCC;
+        color: #CCCCCC;
+        }
+
+        .prevButton:disabled:hover,
+        .nextButton:disabled:hover {
+        background-color: #CCCCCC;
+        color: white;
+        }
+        
+        .prevButton {
+        left: 10px;
+        padding: 1.8 * $space-unit 3.1 * $space-unit 2.2 * $space-unit 2.9 * $space-unit;
+        }
+        
+        .nextButton {
+        right: 10px;
+        padding: 1.8 * $space-unit 2.9 * $space-unit 2.2 * $space-unit 3.1 * $space-unit;
+        }
+    }  
+}

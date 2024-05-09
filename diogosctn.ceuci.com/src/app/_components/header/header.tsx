@@ -33,7 +33,7 @@ const Header = () => {
                 <a href="projects/">projects</a>
                 <div></div>
             </li>
-            <li className={`${styles.link} ${isActive("/blog") && styles.linkActive}`}>
+            {/* <li className={`${styles.link} ${isActive("/blog") && styles.linkActive}`}>
                 <div></div>
                 <a href="blog/">blog</a>
                 <div></div>
@@ -42,7 +42,7 @@ const Header = () => {
                 <div></div>
                 <a href="contacts/">contacts</a>
                 <div></div>
-            </li>
+            </li> */}
             <li className={styles.icon}>
                 <Image
                 priority
