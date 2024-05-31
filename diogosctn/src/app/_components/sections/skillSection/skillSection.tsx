@@ -65,15 +65,16 @@ export default function SkillSection() {
             >
             {domLoaded && (
                 <div style={!isChartActive ? {} : {maxWidth: activeChartDimensions.width}}>
-                  {activeChartIndex !== null && <h3>{skillContents[activeChartIndex].title}</h3>}
+                  {activeChartIndex !== null && <h3>{skillContents[activeChartIndex].name}</h3>}
                   <PieChart
+                      data={skillContents}
                       {...chartDimensions}
                       onChartStateChange={handleChartStateChange}
                   />
                 </div>
             )}
             {!isChartActive ? 
-                <p>Click on a chart slice...</p>:
+                <p>Clique em uma fatia do gráfico...</p>:
                 <p>
                 {
                     activeChartIndex !== null && skillContents[activeChartIndex].content

@@ -20,52 +20,52 @@ const Header = () => {
 
     return (
         <header className={styles.header}>
-        <nav>
-            <a href="/" className={styles.logo}>&lt;diogosctn&gt;</a>
-            <ul>
-            <li className={`${styles.link} ${isActive("/about") && styles.linkActive}`}>
-                <div></div>
-                <a href="about/">about</a>
-                <div></div>
-            </li>
-            <li className={`${styles.link} ${isActive("/projects") && styles.linkActive}`}>
-                <div></div>
-                <a href="projects/">projects</a>
-                <div></div>
-            </li>
-            {/* <li className={`${styles.link} ${isActive("/blog") && styles.linkActive}`}>
-                <div></div>
-                <a href="blog/">blog</a>
-                <div></div>
-            </li>
-            <li className={`${styles.link} ${isActive("/contacts") && styles.linkActive}`}>
-                <div></div>
-                <a href="contacts/">contacts</a>
-                <div></div>
-            </li> */}
-            <li className={styles.icon}>
-                <Image
-                priority
-                src={githubIcon}
-                alt="Link to GitHub"
-                />
-            </li>
-            <li className={styles.icon}>
-                <Image
-                priority
-                src={linkedinIcon}
-                alt="Link to LinkedIn"
-                />
-            </li>
-            <li className={styles.icon}>
-                <Image
-                priority
-                src={instagramIcon}
-                alt="Link to Instagram"
-                />
-            </li>
-            </ul>
-        </nav>
+            <nav>
+                <a href="/" className={styles.logo}>&lt;diogosctn&gt;</a>
+                <ul>
+                <li className={`${styles.link} ${isActive("/about") && styles.linkActive}`}>
+                    <div></div>
+                    <a href="about/">sobre</a>
+                    <div></div>
+                </li>
+                <li className={`${styles.link} ${isActive("/projects") && styles.linkActive}`}>
+                    <div></div>
+                    <a href="projects/">projetos</a>
+                    <div></div>
+                </li>
+                {/* <li className={`${styles.link} ${isActive("/blog") && styles.linkActive}`}>
+                    <div></div>
+                    <a href="blog/">blog</a>
+                    <div></div>
+                </li>
+                <li className={`${styles.link} ${isActive("/contacts") && styles.linkActive}`}>
+                    <div></div>
+                    <a href="contacts/">contacts</a>
+                    <div></div>
+                </li> */}
+                <li className={styles.icon}>
+                    <Image
+                    priority
+                    src={githubIcon}
+                    alt="Link to GitHub"
+                    />
+                </li>
+                <li className={styles.icon}>
+                    <Image
+                    priority
+                    src={linkedinIcon}
+                    alt="Link to LinkedIn"
+                    />
+                </li>
+                <li className={styles.icon}>
+                    <Image
+                    priority
+                    src={instagramIcon}
+                    alt="Link to Instagram"
+                    />
+                </li>
+                </ul>
+            </nav>
         </header>
     )
 }

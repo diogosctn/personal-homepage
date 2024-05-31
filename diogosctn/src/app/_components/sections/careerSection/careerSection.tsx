@@ -22,7 +22,7 @@ export default function CareerSection() {
       <Section containerClassName={styles.careerContainer}>
         <>
           <div className={styles.titleContainer}>
-            <h1>career</h1>
+            <h1>carreira</h1>
           </div>
           <div className={
               `${styles.contentContainer}`

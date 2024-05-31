@@ -18,6 +18,11 @@
         justify-content: space-between;
         color: $primary-font-color;
 
+        a {
+            text-decoration: none;
+            color: $primary-font-color;
+        }
+        
         .logo {
             font-weight: $font-weight-semi-bold;
             font-size: 4 * $font-size-unit;

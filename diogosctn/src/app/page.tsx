@@ -10,7 +10,7 @@ export default function Home() {
       <>
         <div className={styles.textsContainer}>
           <h1>Full-Stack<br/>Web Developer</h1>
-          <p>Full-stack web developer for 4 years writing clean,<br/>elegant and efficient code</p>
+          <p>Desenvolvedor full-stack há mais de 5 anos escrevendo código<br/>limpo, elegante e eficiente</p>
         </div>
         <div className={styles.imageContainer}>
           <Image
