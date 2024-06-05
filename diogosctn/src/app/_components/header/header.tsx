@@ -25,12 +25,12 @@ const Header = () => {
                 <ul>
                 <li className={`${styles.link} ${isActive("/about") && styles.linkActive}`}>
                     <div></div>
-                    <a href="about/">sobre</a>
+                    <a href="about">sobre</a>
                     <div></div>
                 </li>
                 <li className={`${styles.link} ${isActive("/projects") && styles.linkActive}`}>
                     <div></div>
-                    <a href="projects/">projetos</a>
+                    <a href="projects">projetos</a>
                     <div></div>
                 </li>
                 {/* <li className={`${styles.link} ${isActive("/blog") && styles.linkActive}`}>
