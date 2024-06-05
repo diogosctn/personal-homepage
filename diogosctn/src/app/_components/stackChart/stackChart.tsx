@@ -60,7 +60,7 @@ export default function App({
         }}
         onClick={handlePieClick}
       >
-        {data.map((entry, index) => (
+        {data.map((entry: any, index: any) => (
           <Cell key={`cell-${index}`} fill={data[index % data.length].color} />
         ))}
       </Pie>
