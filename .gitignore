@@ -11,6 +11,7 @@
 # next.js
 /diogosctn/.next/
 /diogosctn/out/
+/out/
 
 # production
 /diogosctn/build
