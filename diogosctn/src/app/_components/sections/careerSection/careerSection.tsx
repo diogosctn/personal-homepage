@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from 'react';
+import { useState } from 'react';
 
 import Section from '../../section/section';
 import styles from './careerSection.module.scss'

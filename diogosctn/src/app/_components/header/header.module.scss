@@ -4,25 +4,41 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1000;
-    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     height: 11.5 * $space-unit;
+    width: 100%;
     background-color: $primary-color;
+    color: $primary-font-color;
+    z-index: 1000;
+    box-sizing: border-box;
 
+    
     nav {
         display: flex;
         height: 100%;
         max-width: 130 * $space-unit;
         margin: auto;
         align-items: center;
+        width: 100%;
         justify-content: space-between;
         color: $primary-font-color;
+        padding: 0 4 * $space-unit;
+        box-sizing: border-box;
+
+        div {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+        }
 
         a {
             text-decoration: none;
             color: $primary-font-color;
         }
-        
+
         .logo {
             font-weight: $font-weight-semi-bold;
             font-size: 4 * $font-size-unit;
@@ -34,75 +50,184 @@
             }
         }
 
+        .hamburger {
+            display: none;
+            font-size: 2rem;
+            background: none;
+            border: none;
+            color: $primary-font-color;
+            cursor: pointer;
+        }
+
         ul {
             display: flex;
             height: 100%;
-             
-            .link {
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                align-items: center;
-                margin-left: 2 * $space-unit;
-                
-                font-weight: $font-weight-semi-bold;
-                font-size: 3 * $font-size-unit;
+            padding-left: 0;
 
-                transition: font-weight $transition-speed;
-                
-                div {
-                    width: 100%;
-                    height: 0;
-                    transition: height $transition-speed;
+            li {
 
-                    border-radius: $border-radius $border-radius 0 0;
-                
-                    &:last-child {
-                        background-color: $primary-font-color;
+                &.link {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-left: 2 * $space-unit;
+                    
+                    font-weight: $font-weight-semi-bold;
+                    font-size: 3 * $font-size-unit;
+
+                    transition: font-weight $transition-speed;
+                    
+                    div {
+                        width: 100%;
+                        height: 0;
+                        transition: height $transition-speed;
+
+                        border-radius: $border-radius $border-radius 0 0;
+                    
+                        &:last-child {
+                            background-color: $primary-font-color;
+                        }
+                    }
+                    
+                    &:hover {
+                        font-weight: $font-weight-extra-bold;
+
+                        div {
+                            height: $space-unit;
+                        }
                     }
                 }
-                
-                &:hover {
+
+                &.linkActive {
                     font-weight: $font-weight-extra-bold;
 
                     div {
                         height: $space-unit;
                     }
                 }
-            }
 
-            .linkActive {
-                font-weight: $font-weight-extra-bold;
-
-                div {
-                    height: $space-unit;
-                }
-            }
-            
-            .icon {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                margin-left: 2 * $space-unit;
-                margin-right: 0;
-
-                transition: margin-left $transition-speed;
-                transition: margin-right $transition-speed;
-                
-                img {
-                    transform: scale(1);
-                    transition: transform $transition-speed;
-                }
-
-                &:hover {
-                    margin-left: 2.2 * $space-unit;
-                    margin-right: 0.2 * $space-unit;
-
+                &.icon {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    margin-left: 2 * $space-unit;
+                    margin-right: 0;
+    
+                    transition: margin-left $transition-speed;
+                    transition: margin-right $transition-speed;
+                    
                     img {
-                        transform: scale(1.2);
+                        transform: scale(1);
+                        transition: transform $transition-speed;
+                    }
+    
+                    &:hover {
+                        margin-left: 2.2 * $space-unit;
+                        margin-right: 0.2 * $space-unit;
+    
+                        img {
+                            transform: scale(1.2);
+                        }
                     }
                 }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        height: 9 * $space-unit;
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            padding: 2 * $space-unit 3 * $space-unit ;
+
+            .hamburger {
+                display: block;
+            }
+
+            ul {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                background-color: $primary-color;
+                
+                li {
+                    width: 100%;
+                    margin: 0;
+                    
+                    
+                    &.link, &.icon {
+                        margin: 0;
+                    }
+                    
+                    a {
+                        text-align: center;
+                        display: block;
+                        padding: 1rem;
+                        width: -moz-fit-content;
+                        width: fit-content;
+                    }
+
+                    &.icon {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        margin-left: 2 * $space-unit;
+                        padding-top: 2 * $space-unit;
+
+                        transition: margin-left $transition-speed;
+                        transition: margin-right $transition-speed;
+                        
+                        img {
+                            transform: scale(1);
+                            transition: transform $transition-speed;
+                        }
+
+                        &:hover {
+                            margin-left: 2 * $space-unit;
+                            margin-right: 2 * $space-unit;
+        
+                            img {
+                                transform: scale(1.2);
+                            }
+                        }
+                    }
+                }
+            }
+
+            ul.iconList {
+                flex-direction: row;
+                width: -moz-fit-content;
+                width: fit-content;
+                margin: auto;
+                padding-bottom: 3 * $space-unit;
+                li {
+                    width: -moz-fit-content;
+                    width: fit-content;
+                    margin: 0  2 * $space-unit;
+                }
+
+            }
+
+
+        }
+    }
+    .menuOpen {
+        display: flex;
+        height: -moz-fit-content;
+        height: fit-content;
+        nav {
+            align-items: flex-start;
+
+            & > ul {
+                display: flex;
             }
         }
     }

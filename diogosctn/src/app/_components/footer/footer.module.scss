@@ -17,6 +17,7 @@
         align-items: center;
         justify-content: flex-start;
         color: $tertiary-font-color;
+        padding: 0 4 * $space-unit;
 
         p {
             font-weight: $font-weight-light;
@@ -24,5 +25,11 @@
 
             transition: font-weight $transition-speed;
         }
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        height: 7 * $space-unit;
     }
 }

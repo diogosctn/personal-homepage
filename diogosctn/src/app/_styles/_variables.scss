@@ -19,6 +19,7 @@ $font-weight-bold: 700;
 $font-weight-extra-bold: 800;
 $font-size-unit: 0.5rem;
 $line-height-1: 35px;
+$line-height-2: 30px;
 
 $transition-speed: 0.3s;
 
@@ -38,6 +39,7 @@ $transition-speed: 0.3s;
   fontWeightExtraBold: $font-weight-extra-bold;
   fontSizeUnit: $font-size-unit;
   lineHeight1: $line-height-1;
+  lineHeight2: $line-height-2;
   borderRadius: $border-radius;
   transitionSpeed: $transition-speed;
 }

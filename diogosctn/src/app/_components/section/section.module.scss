@@ -5,8 +5,10 @@
     background-color: $surface-color;
     padding-top: 8 * $space-unit;
     padding-bottom: 9 * $space-unit;
-
+    
     & > div {
+        padding-left: 4 * $space-unit;
+        padding-right: 4 * $space-unit;
         display: flex;
         height: 100%;
         max-width: 130 * $space-unit;

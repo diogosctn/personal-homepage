@@ -64,13 +64,61 @@
         }
         
         .prevButton {
-        left: 10px;
-        padding: 1.8 * $space-unit 3.1 * $space-unit 2.2 * $space-unit 2.9 * $space-unit;
+            left: 10px;
+            padding: 1.8 * $space-unit 3.1 * $space-unit 2.2 * $space-unit 2.9 * $space-unit;
         }
         
         .nextButton {
-        right: 10px;
-        padding: 1.8 * $space-unit 2.9 * $space-unit 2.2 * $space-unit 3.1 * $space-unit;
+            right: 10px;
+            padding: 1.8 * $space-unit 2.9 * $space-unit 2.2 * $space-unit 3.1 * $space-unit;
         }
     }  
+}
+
+@media (max-width: 768px) {
+    .careerContainer {
+
+        .contentContainer {
+            flex-direction: column;
+        }
+    
+        .titleContainer > h1 {
+            font-size: 7 * $font-size-unit;
+            margin-bottom: 2 * $space-unit;
+        }
+
+        .contentContainer > p {
+            text-align: center;
+        }
+
+        .contentContainer p {
+            font-size: 2.5 * $font-size-unit;
+            line-height: $line-height-2;
+            width: 100%;
+        }
+
+        .contentContainer li {
+            font-size: 2 * $font-size-unit;
+            line-height: $line-height-2;
+        }
+
+        & .contentContainer .prevButton {
+            font-size: 1.6 * $font-size-unit;
+            left: 0px;
+            padding: 0.72 * $space-unit 1.24 * $space-unit 0.88 * $space-unit 1.16 * $space-unit;
+        }
+        
+        & .contentContainer .nextButton {
+            font-size: 1.6 * $font-size-unit;
+            right: 0px;
+            padding: 0.72 * $space-unit 1.16 * $space-unit 0.88 * $space-unit 1.24 * $space-unit;
+        }
+
+        & .contentContainer .active {
+            padding: 0px 7 * $space-unit;
+            display: block;
+            opacity: 1;
+            text-align: justify;
+        }
+    }
 }

@@ -64,7 +64,7 @@ export default function SkillSection() {
             }
             >
             {domLoaded && (
-                <div style={!isChartActive ? {} : {maxWidth: activeChartDimensions.width}}>
+                <div style={!isChartActive ? {} : {width: activeChartDimensions.width}}>
                   {activeChartIndex !== null && <h3>{skillContents[activeChartIndex].name}</h3>}
                   <PieChart
                       data={skillContents}
@@ -75,11 +75,11 @@ export default function SkillSection() {
             )}
             {!isChartActive ? 
                 <p>Clique em uma fatia do gráfico...</p>:
-                <p>
+                <div>
                 {
                     activeChartIndex !== null && skillContents[activeChartIndex].content
                 }
-                </p>
+                </div>
             }
             </div>
         </>

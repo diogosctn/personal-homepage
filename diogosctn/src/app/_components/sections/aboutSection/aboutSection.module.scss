@@ -9,3 +9,29 @@
     }
 }
 
+@media (max-width: 768px) {
+    .aboutContainer {
+        margin-top: 9 * $space-unit;
+    }
+    .aboutContainer > div {
+        flex-direction: column;
+        justify-content: center;
+
+        .textsContainer{
+            h1 {
+                font-size: 7 * $font-size-unit;
+                margin-bottom: 2 * $space-unit;
+            }
+        
+            p {
+                font-size: 2.5 * $font-size-unit;
+                line-height: $line-height-2;
+            }
+        }
+    
+        .imageContainer {
+            margin-top: 2 * $space-unit;
+        }
+
+    }
+}
